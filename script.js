@@ -1,4 +1,5 @@
 function relogio() {
+    const html = document.querySelector('html');
     const elementoRelogio = document.querySelector(".relogio");
     const horaAtual = new Date();
 
@@ -21,30 +22,29 @@ function relogio() {
 
     const esta = document.querySelector(".esta")
 
-    dianoite = new Array('Madrugada','Manhã', 'Tarde', 'Noite');
+    dianoite = new Array('Madrugada', 'Manhã', 'Tarde', 'Noite');
 
     if (horas >= 0) {
-        esta.innerHTML = `Esta de ${dianoite[0]}`
-        html.classList.toggle('madrugada');
+        esta.innerHTML = `Esta de ${dianoite[0]}`;
+        html.classList.add('madrugada');
+
+        
     }
 
-    if(horas >= 6){
+    if (horas >= 6) {
         esta.innerHTML = `Esta de ${dianoite[1]}`
-        html.classList.toggle('manha');
+        html.classList.add('manha');
     }
 
     if (horas >= 13) {
         esta.innerHTML = `Esta de ${dianoite[2]}`
-        html.classList.toggle('tarde');
+        html.classList.add('tarde');
     }
 
     if (horas >= 18) {
         esta.innerHTML = `Esta de ${dianoite[3]}`
-        html.classList.toggle('noite');
+        html.classList.add('noite');
     }
-
-
-
 
     elementoRelogio.textContent = `${formatoHoras}:${formatoMinutos}:${formatoSegundos}`
 }
