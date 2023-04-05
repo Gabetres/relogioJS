@@ -27,8 +27,6 @@ function relogio() {
     if (horas >= 0) {
         esta.innerHTML = `Esta de ${dianoite[0]}`;
         html.classList.add('madrugada');
-
-        
     }
 
     if (horas >= 6) {
