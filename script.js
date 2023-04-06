@@ -25,22 +25,22 @@ function relogio() {
     dianoite = new Array('Madrugada', 'Manhã', 'Tarde', 'Noite');
 
     if (horas >= 0) {
-        esta.innerHTML = `Esta de ${dianoite[0]}`;
+        esta.innerHTML = `Está de ${dianoite[0]}`;
         html.classList.add('madrugada');
     }
 
     if (horas >= 6) {
-        esta.innerHTML = `Esta de ${dianoite[1]}`
+        esta.innerHTML = `Está de ${dianoite[1]}`
         html.classList.add('manha');
     }
 
     if (horas >= 13) {
-        esta.innerHTML = `Esta de ${dianoite[2]}`
+        esta.innerHTML = `Está de ${dianoite[2]}`
         html.classList.add('tarde');
     }
 
     if (horas >= 18) {
-        esta.innerHTML = `Esta de ${dianoite[3]}`
+        esta.innerHTML = `Está de ${dianoite[3]}`
         html.classList.add('noite');
     }
 
