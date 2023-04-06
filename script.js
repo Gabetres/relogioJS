@@ -22,26 +22,33 @@ function relogio() {
 
     const esta = document.querySelector(".esta")
 
-    dianoite = new Array('Madrugada', 'Manhã', 'Tarde', 'Noite');
+    dianoite = new Array('Hora de Dormir', 'Bom Dia', 'Boa Tarde', 'Boa Noite');
 
     if (horas >= 0) {
-        esta.innerHTML = `Está de ${dianoite[0]}`;
+        esta.innerHTML = `${dianoite[0]}`;
         html.classList.add('madrugada');
+        document.getElementById("dor").style.display="inline";
     }
 
     if (horas >= 6) {
-        esta.innerHTML = `Está de ${dianoite[1]}`
+        esta.innerHTML = `${dianoite[1]}`
         html.classList.add('manha');
+        document.getElementById("dor").style.display="none";
+        document.getElementById("man").style.display="inline";
     }
 
     if (horas >= 13) {
-        esta.innerHTML = `Está de ${dianoite[2]}`
+        esta.innerHTML = `${dianoite[2]}`
         html.classList.add('tarde');
+        document.getElementById("man").style.display="none";
+        document.getElementById("tar").style.display="inline"
     }
 
     if (horas >= 18) {
-        esta.innerHTML = `Está de ${dianoite[3]}`
+        esta.innerHTML = `${dianoite[3]}`
         html.classList.add('noite');
+        document.getElementById("tar").style.display="none";
+        document.getElementById("noi").style.display="inline"
     }
 
     elementoRelogio.textContent = `${formatoHoras}:${formatoMinutos}:${formatoSegundos}`

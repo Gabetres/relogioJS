@@ -18,13 +18,13 @@
 
 .manha:root {
     --body-bg: #ff5b5b;
-    --box-bg: #ff6348;
+    --box-bg: #ff4848;
     --body-color: rgb(255, 255, 255);
 }
 
 .tarde:root {
-    --body-bg: #ffac3e;
-    --box-bg: #ff9900;
+    --body-bg: #583eff;
+    --box-bg: #5720ff;
     --body-color: rgb(255, 255, 255);
 }
 
@@ -51,7 +51,7 @@ html {
 }
 
 h1 {
-    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .box {
@@ -66,9 +66,18 @@ h1 {
     box-shadow: 15px 15px 25px #0000003d;
 }
 
+i{
+    font-size: 42px;
+    margin-bottom: 20px ;
+}
+
 .relogio {
     font-family: 'clock', sans-serif;
     font-size: 95px;
+}
+
+.esta{
+    font-weight: 700;
 }
 
 .info {
